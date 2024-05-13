@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "webApplicationArkbit_backend": {
+      "main": "src/webApplicationArkbit_backend/main.mo",
+      "type": "motoko"
+    },
+    "webApplicationArkbit_frontend": {
+      "dependencies": [
+        "webApplicationArkbit_backend"
+      ],
+      "source": [
+        "src/webApplicationArkbit_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "webApplicationArkbit_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
